@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+a{
+  color: #46688f;
+}
+
+a:hover{
+  color: #5b81ae;
+  text-decoration: none;
+}
+
+.nav-item > a:hover {
+  color: #5b81ae !important;
+}
+
+.nav-item > a.active{
+  color: #46688f !important;
+  font-weight: bold;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar-toggler:hover{
+  border: 1px solid #46688f;
+}
+
+.bars{
+  color: #46688f;
+  font-size: 30px;
+}
+
+body{
+  font-family: 'Roboto', 'Arial', sans-serif;
+  background-color: #eee;
+  color: #121212;
+}
+
+.jumbotron{
+  background-image: linear-gradient(#f8f8f8, #eee);
+}
+
+.bg-dark, .bg-primary, .bg-success, .bg-danger{
+  color: #eee;
+}
+
+.bg-light{
+  background-color: #f8f8f8 !important;
+  color: #121212;
+}
+
+.bg-white{
+  background-color: #e1e1e1 !important;
+}
+
+.table-light tbody+tbody, .table-light td, .table-light th, .table-light thead th{
+  border-color: #ddd;
+}
+
+.table-light{
+  background-color: #f8f8f8;
+  color: #121212;
+}
+
+.table-light > tbody > tr:hover{
+  background-color: #eee;
+  color: #121212;
+}
+
+.rs-rujukan:hover, .grafik:hover, .vaksin:hover, .peta-sebaran:hover{
+  background-size: 60%;
+  transition: .2s;
+  background-color: #f8f8f8 !important;
+}
+
+a.rs-rujukan:hover, a.grafik:hover, a.vaksin:hover, a.peta-sebaran:hover{
+  background-color: #f8f8f8 !important;
+}
+
+.app{
+  min-height: 100vh;
+}
+
+.logo{
+  width: 191px;
+  height: 44px;
+  background-image: url('../img/logo-light.png');
+}
+
+.home-body-1{
+  margin-bottom: 0;
+}
+
+.home-body-2{
+  border-radius: 2%;
+}
+
+.table-responsive {
+  display:block;
+  height : 500px !important;
+  overflow-y : scroll;
+  width: 100%;
+  overflow-x: auto;
+}
+
+@media (min-width: 992px) { 
+  .home-body-1{
+    height: 863px;
+  }
+
+  .home-body-2{
+    margin-top: -363px;
+  }
+}
+
+.home-body-4 > .row > .card{
+  min-height: 900px;
+}
+
+.fb3{
+  width: 35%;
+}
+
+@media (min-width: 768px) { 
+  .fb3{
+    width: 50%;
+  }
+}
+
+.peta-sebaran, .rs-rujukan, .grafik, .vaksin{
+  width: 130px;
+  height: 130px;
+  height: calc(25vw - 1.5rem);
+  max-height: 6.25rem;
+  max-width: 6.25rem;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 55%;
+}
+
+.peta-sebaran{
+  background-image: url(../img/location-light.png);
+}
+.rs-rujukan{
+  background-image: url(../img/ambulance-light.png);
+}
+.grafik{
+  background-image: url(../img/chart-light.png);
+}
+.vaksin{
+  background-image: url(../img/chemical-light.png);
+}
+
+.scroll-to-top{
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  display: none;
+  width: 2.75rem;
+  height: 2.75rem;
+  text-align: center;
+  color: #f8f8f8;
+  background-color: #46688f !important;
+  line-height: 46px;
+}
+
+.scroll-to-top{
+  transform: rotate(-9deg);
+  transform-origin: bottom left;
+  opacity: .8;
+}
+
+a.scroll-to-top:hover, a.scroll-to-top:hover {
+  color: #f8f8f8 !important;
+  background-color: #5b81ae !important;
+  transform: rotate(0deg);
+  box-shadow: none;
+  transition: .2s;
+  opacity: 1;
+}
+
+.scroll-to-top i {
+  font-weight: 800;
+}
+
+.dropdown-divider{
+  opacity: .3;
+}
+
+.status{
+  opacity: 0;
+  transform: translate(-50px, 0);
+  transition: transform .5s, opacity .5s;
+}
+
+.visible{
+  opacity: 1;
+  transform: translate(0, 0);
+}
