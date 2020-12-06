@@ -1,8 +1,8 @@
 {
-  "homepage": "http://rasyidarazak.github.io/covid19-design",
+  "homepage": "http://rasyidarazak.github.io/wican-webdesign",
   "name": "covid19-design",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
     "@fortawesome/free-brands-svg-icons": "^5.15.1",
