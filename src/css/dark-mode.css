@@ -112,7 +112,7 @@
   background-color: #85a1c3 !important;
 }
 
-[data-theme="dark"] a.scroll-to-top:hover, [data-theme="dark"] a.scroll-to-top:hover {
+[data-theme="dark"] a.scroll-to-top:hover, [data-theme="dark"] a.scroll-to-top:active{
   color: #333 !important;
   background-color: #97aecb !important;
 }

@@ -17,8 +17,8 @@ class Home extends Component {
         {/* Home Body 1 */}
         <div className="home-body-1 jumbotron jumbotron-fluid text-center">
           <div className="container">
-            <h1 className="display-4">Siaga COVID-19</h1>
-            <p className="lead">Sumber informasi inisiatif sukarela warganet Indonesia pro-data, terdiri dari praktisi kesehatan, akademisi & profesional.</p>
+            <h3 className="text-uppercase">Siaga COVID-19</h3>
+            <p className="lead">Sumber informasi inisiatif sukarela warganet Indonesia pro-data.</p>
             <hr className="hr my-4" />
             <p className="lead">Data COVID-19 Indonesia</p>
             <DataIndonesia />
@@ -46,26 +46,26 @@ class Home extends Component {
         <div className="home-body-3 container pt-5">
           <div className="row justify-content-center text-center">
 
-            <div className="col-md-8">
+            <div className="col-lg-8 col-md-10">
 
               <div className="row">
 
-                <div className="col-3">
+                <div className="col-md-3">
                   <a href="#" className="rs-rujukan rounded-circle mx-auto d-flex flex-wrap align-items-center mb-3 shadow"></a>
                   <p>RS Rujukan</p>
                 </div>
 
-                <div className="col-3">
+                <div className="col-md-3">
                   <a href="#" className="peta-sebaran rounded-circle mx-auto d-flex flex-wrap align-items-center mb-3 shadow"></a>
                   <p>Peta Sebaran</p>
                 </div>
                 
-                <div className="col-3">
+                <div className="col-md-3">
                   <a href="#" className="grafik rounded-circle mx-auto d-flex flex-wrap align-items-center mb-3 shadow"></a>
                   <p>Grafik</p>
                 </div>
 
-                <div className="col-3">
+                <div className="col-md-3">
                   <a href="#" className="vaksin rounded-circle mx-auto d-flex flex-wrap align-items-center mb-3 shadow"></a>
                   <p>Perkembangan Vaksin</p>
                 </div>

@@ -132,11 +132,10 @@ a.rs-rujukan:hover, a.grafik:hover, a.vaksin:hover, a.peta-sebaran:hover{
 }
 
 .peta-sebaran, .rs-rujukan, .grafik, .vaksin{
-  width: 130px;
-  height: 130px;
-  height: calc(25vw - 1.5rem);
-  max-height: 6.25rem;
-  max-width: 6.25rem;
+  width: 150px;
+  height: 150px;
+  max-height: 7.25rem;
+  max-width: 7.25rem;
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: 55%;
@@ -168,19 +167,9 @@ a.rs-rujukan:hover, a.grafik:hover, a.vaksin:hover, a.peta-sebaran:hover{
   line-height: 46px;
 }
 
-.scroll-to-top{
-  transform: rotate(-9deg);
-  transform-origin: bottom left;
-  opacity: .8;
-}
-
-a.scroll-to-top:hover, a.scroll-to-top:hover {
-  color: #f8f8f8 !important;
+a.scroll-to-top:hover, a.scroll-to-top:active {
+  color: #f8f8f8;
   background-color: #5b81ae !important;
-  transform: rotate(0deg);
-  box-shadow: none;
-  transition: .2s;
-  opacity: 1;
 }
 
 .scroll-to-top i {

@@ -25,7 +25,7 @@ class Faq extends Component {
                 <img src={Corona} alt="corona" className="w-75 mb-5 mb-md-0"/>
               </div>
               <div className="col-md-7 ml-1 ml-md-0">
-                <h2>Apa itu COVID-19?</h2>
+                <h3>Apa itu COVID-19?</h3>
                 <p>COVID-19 adalah penyakit menular yang disebabkan oleh virus korona SARS-CoV-2. Disebut korona karena bentuknya yang seperti mahkota (korona ~ crown = mahkota dalam bahasa Latin).<br/><br/>Beberapa contoh penyakit pada manusia yang disebabkan oleh virus korona antara lain MERS (Sindrom Pernafasan Timur Tengah) dan SARS (Sindrom Pernafasan Akut Parah).<br/><br/>Virus korona terbaru yang ditemukan yang ditemukan di Wuhan, Tiongkok, pada bulan Desember 2019 diberi nama SARS Coronavirus 2 (SARS-CoV-2) dan menyebabkan penyakit Coronavirus Disease 2019 (COVID-19).</p>
               </div>
             </div>
@@ -38,7 +38,7 @@ class Faq extends Component {
           <div className="container">
             <div className="row align-items-center">
               <div className="col-md-7 ml-1 ml-md-0">
-                <h2>Bagaimana COVID-19 menular?</h2>
+                <h3>Bagaimana COVID-19 menular?</h3>
                 <p>Penularan terjadi melalui droplet (butir-butir tetesan cairan) dari hidung atau mulut yang menyebar saat pembawa virus COVID-19 batuk, bersin atau meler. Tetesan cairan tersebut akan menempel pada benda atau permukaan di sekitarnya. Dan kemudian masuk ke mulut, hidung atau mata. Inilah alasan pentingnya sering-sering cuci tangan dan jangan menyentuh muka dengan tangan.<br/><br/>Orang sehat dapat tertular saat tangan mereka menyentuh permukaan yang terkena tetesan tersebut dan kemudian tanpa sadar menyentuh mata, mulut, ataupun hidung (selaput lendir). Virus juga bisa masuk saat orang sehat secara tidak sengaja menghirup tetesan cairan saat si pembawa virus batuk atau bersin.</p>
               </div>
               <div className="col-md-5 text-center">
@@ -55,7 +55,7 @@ class Faq extends Component {
 
             <div className="row align-items-center text-center">
               <div className="col-md-12 mx-1 mx-md-0">
-                <h2>Kita harus bagaimana?</h2>
+                <h3>Kita harus bagaimana?</h3>
               </div>
             </div>
 
@@ -89,7 +89,7 @@ class Faq extends Component {
                 <img src={Fever} alt="fever" className="w-75 mb-5 mb-md-0"/>
               </div>
               <div className="col-md-7 ml-1 ml-md-0">
-                <h2>Apa saja gejala seseorang yang terinfeksi?</h2>
+                <h3>Apa saja gejala seseorang yang terinfeksi?</h3>
                 <p>Gejala yang muncul ini bergantung pada jenis virus corona yang menyerang, dan seberapa serius infeksi yang terjadi. Berikut beberapa gejala virus corona yang terbilang ringan:</p>
                 <ul>
                   <li>Hidung beringus</li>
@@ -118,7 +118,7 @@ class Faq extends Component {
           <div className="container">
             <div className="row align-items-center">
               <div className="col-md-7 ml-1 ml-md-0">
-                <h2>Apa yang harus kita lakukan jika mengalami gejala virus COVID-19?</h2>
+                <h3>Apa yang harus dilakukan jika mengalami gejala virus?</h3>
                 <p>Jika Anda memiliki gejala ringan dan belum pernah kontak dengan orang positif Virus Corona, COVID-‐19 atau bepergian, Anda harus lakukan isolasi mandiri di rumah selama 14 hari. Jika gejala Anda memburuk, maka Anda harus mencari pertolongan medis.<br/><br/>Jika perlu informasi lebih lanjut bisa hubungi hotline <NavLink to="/hotline">disini</NavLink>.</p>
               </div>
               <div className="col-md-5 text-center">
