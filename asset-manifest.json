@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/wican-webdesign/static/css/main.c3f7b82d.chunk.css",
+    "main.js": "/wican-webdesign/static/js/main.8b1f88ec.chunk.js",
+    "main.js.map": "/wican-webdesign/static/js/main.8b1f88ec.chunk.js.map",
+    "runtime-main.js": "/wican-webdesign/static/js/runtime-main.aa8f004a.js",
+    "runtime-main.js.map": "/wican-webdesign/static/js/runtime-main.aa8f004a.js.map",
+    "static/js/2.91a848ce.chunk.js": "/wican-webdesign/static/js/2.91a848ce.chunk.js",
+    "static/js/2.91a848ce.chunk.js.map": "/wican-webdesign/static/js/2.91a848ce.chunk.js.map",
+    "index.html": "/wican-webdesign/index.html",
+    "static/css/main.c3f7b82d.chunk.css.map": "/wican-webdesign/static/css/main.c3f7b82d.chunk.css.map",
+    "static/js/2.91a848ce.chunk.js.LICENSE.txt": "/wican-webdesign/static/js/2.91a848ce.chunk.js.LICENSE.txt",
+    "static/media/style.css": "/wican-webdesign/static/media/location-light.73fc8fa6.png",
+    "static/media/corona.007605ca.svg": "/wican-webdesign/static/media/corona.007605ca.svg",
+    "static/media/droplet.bc29f77d.svg": "/wican-webdesign/static/media/droplet.bc29f77d.svg",
+    "static/media/fever.1e063f4d.svg": "/wican-webdesign/static/media/fever.1e063f4d.svg",
+    "static/media/hand-wash.22c35140.svg": "/wican-webdesign/static/media/hand-wash.22c35140.svg",
+    "static/media/kemenkes.7784d834.png": "/wican-webdesign/static/media/kemenkes.7784d834.png",
+    "static/media/logo-jabar.1f987df9.png": "/wican-webdesign/static/media/logo-jabar.1f987df9.png",
+    "static/media/logo-jateng.2902c5dc.png": "/wican-webdesign/static/media/logo-jateng.2902c5dc.png",
+    "static/media/logo-jatim.641b8b6b.png": "/wican-webdesign/static/media/logo-jatim.641b8b6b.png",
+    "static/media/logo-yogya.5e0ae5c3.jpg": "/wican-webdesign/static/media/logo-yogya.5e0ae5c3.jpg",
+    "static/media/male-patient.70a89e1a.svg": "/wican-webdesign/static/media/male-patient.70a89e1a.svg",
+    "static/media/social-distance.8a3ab0ba.svg": "/wican-webdesign/static/media/social-distance.8a3ab0ba.svg",
+    "static/media/stay-at-home.6854b9b4.svg": "/wican-webdesign/static/media/stay-at-home.6854b9b4.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.aa8f004a.js",
+    "static/js/2.91a848ce.chunk.js",
+    "static/css/main.c3f7b82d.chunk.css",
+    "static/js/main.8b1f88ec.chunk.js"
+  ]
+}
