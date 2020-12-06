@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/wican-webdesign/static/css/main.c3f7b82d.chunk.css",
-    "main.js": "/wican-webdesign/static/js/main.8b1f88ec.chunk.js",
-    "main.js.map": "/wican-webdesign/static/js/main.8b1f88ec.chunk.js.map",
+    "main.css": "/wican-webdesign/static/css/main.3f88dc9b.chunk.css",
+    "main.js": "/wican-webdesign/static/js/main.586a2273.chunk.js",
+    "main.js.map": "/wican-webdesign/static/js/main.586a2273.chunk.js.map",
     "runtime-main.js": "/wican-webdesign/static/js/runtime-main.aa8f004a.js",
     "runtime-main.js.map": "/wican-webdesign/static/js/runtime-main.aa8f004a.js.map",
     "static/js/2.91a848ce.chunk.js": "/wican-webdesign/static/js/2.91a848ce.chunk.js",
     "static/js/2.91a848ce.chunk.js.map": "/wican-webdesign/static/js/2.91a848ce.chunk.js.map",
     "index.html": "/wican-webdesign/index.html",
-    "static/css/main.c3f7b82d.chunk.css.map": "/wican-webdesign/static/css/main.c3f7b82d.chunk.css.map",
+    "static/css/main.3f88dc9b.chunk.css.map": "/wican-webdesign/static/css/main.3f88dc9b.chunk.css.map",
     "static/js/2.91a848ce.chunk.js.LICENSE.txt": "/wican-webdesign/static/js/2.91a848ce.chunk.js.LICENSE.txt",
     "static/media/style.css": "/wican-webdesign/static/media/location-light.73fc8fa6.png",
     "static/media/corona.007605ca.svg": "/wican-webdesign/static/media/corona.007605ca.svg",
@@ -27,7 +27,7 @@
   "entrypoints": [
     "static/js/runtime-main.aa8f004a.js",
     "static/js/2.91a848ce.chunk.js",
-    "static/css/main.c3f7b82d.chunk.css",
-    "static/js/main.8b1f88ec.chunk.js"
+    "static/css/main.3f88dc9b.chunk.css",
+    "static/js/main.586a2273.chunk.js"
   ]
 }
