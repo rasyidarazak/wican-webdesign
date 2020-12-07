@@ -10,7 +10,7 @@ class NoMatch extends React.Component {
                 {/* NoMatch Body 1 */}
                 <div className="no-match jumbotron jumbotron-fluid">
                     <div className="container">
-                        <h1 className="display-4"><FontAwesomeIcon icon={faExclamationCircle}/> 404 Not Found</h1>
+                        <h3 className="display-4"><FontAwesomeIcon icon={faExclamationCircle}/> 404 Not Found</h3>
                         <p className="lead">Halaman tidak ditemukan. Pastikan URL anda menuju ke halaman yang benar.</p>
                     </div>
                 </div>

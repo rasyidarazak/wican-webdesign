@@ -37,8 +37,8 @@ class Hotline extends Component {
 
             <div className="row text-center align-items-center">
               <div className="col-md-12 ml-1 ml-md-0">
-                <h2>COVID-19 Hotline Indonesia</h2>
-                <p>Layanan darurat via telepon yang disediakan oleh Kemkes dan juga Pemprov DKI Jakarta</p>
+                <h3>COVID-19 Hotline Indonesia</h3>
+                <p className="lead">Layanan darurat via telepon yang disediakan oleh Kemkes dan juga Pemprov DKI Jakarta</p>
               </div>
             </div>
 

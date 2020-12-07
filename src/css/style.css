@@ -38,10 +38,11 @@ body{
   font-family: 'Roboto', 'Arial', sans-serif;
   background-color: #eee;
   color: #121212;
+  min-height: 100vh;
 }
 
 .jumbotron{
-  background-image: linear-gradient(#f8f8f8, #eee);
+  background-image: linear-gradient(#fafafa, #eee);
 }
 
 .bg-dark, .bg-primary, .bg-success, .bg-danger{
@@ -49,7 +50,7 @@ body{
 }
 
 .bg-light{
-  background-color: #f8f8f8 !important;
+  background-color: #fafafa !important;
   color: #121212;
 }
 
@@ -62,7 +63,7 @@ body{
 }
 
 .table-light{
-  background-color: #f8f8f8;
+  background-color: #fafafa;
   color: #121212;
 }
 
@@ -74,11 +75,11 @@ body{
 .rs-rujukan:hover, .grafik:hover, .vaksin:hover, .peta-sebaran:hover{
   background-size: 60%;
   transition: .2s;
-  background-color: #f8f8f8 !important;
+  background-color: #fafafa !important;
 }
 
 a.rs-rujukan:hover, a.grafik:hover, a.vaksin:hover, a.peta-sebaran:hover{
-  background-color: #f8f8f8 !important;
+  background-color: #fafafa !important;
 }
 
 .app{
@@ -89,6 +90,7 @@ a.rs-rujukan:hover, a.grafik:hover, a.vaksin:hover, a.peta-sebaran:hover{
   width: 191px;
   height: 44px;
   background-image: url('../img/logo-light.png');
+  background-size: cover;
 }
 
 .home-body-1{
@@ -162,13 +164,13 @@ a.rs-rujukan:hover, a.grafik:hover, a.vaksin:hover, a.peta-sebaran:hover{
   width: 2.75rem;
   height: 2.75rem;
   text-align: center;
-  color: #f8f8f8;
+  color: #fafafa;
   background-color: #46688f !important;
   line-height: 46px;
 }
 
 a.scroll-to-top:hover, a.scroll-to-top:active {
-  color: #f8f8f8;
+  color: #fafafa;
   background-color: #5b81ae !important;
 }
 

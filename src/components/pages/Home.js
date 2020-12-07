@@ -18,7 +18,7 @@ class Home extends Component {
         <div className="home-body-1 jumbotron jumbotron-fluid text-center">
           <div className="container">
             <h3 className="text-uppercase">Siaga COVID-19</h3>
-            <p className="lead">Sumber informasi inisiatif sukarela warganet Indonesia pro-data.</p>
+            <p className="lead">Sumber informasi inisiatif sukarela warganet Indonesia pro-data</p>
             <hr className="hr my-4" />
             <p className="lead">Data COVID-19 Indonesia</p>
             <DataIndonesia />
@@ -33,7 +33,7 @@ class Home extends Component {
               <h5>Data Kasus COVID-19 di Indonesia Berdasarkan Provinsi</h5>
             </div>
           </div>
-
+          <hr/>  
           <div className="row justify-content-center">
             <div className="col-md-12">
               <DataProvinsi />
