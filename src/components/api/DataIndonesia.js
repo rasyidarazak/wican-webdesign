@@ -16,7 +16,7 @@ class DataIndonesia extends Component {
 
     componentDidMount() {
       Promise.all([
-          fetch('https://indonesia-covid-19.mathdro.id/api')
+          fetch('https://covid19.mathdro.id/api/countries/indonesia')
       ])
       .then(([res1]) => Promise.all([res1.json()]))
       .then(([data1]) => this.setState({
@@ -76,7 +76,7 @@ class DataIndonesia extends Component {
                   <div className="card-body">
                     <p className="card-text">
                       Terkonfirmasi Positif<br/>
-                      <span className="font-weight-bold lead">{this.numberWithCommas(items1.jumlahKasus)}</span>
+                      <span className="font-weight-bold lead">{this.numberWithCommas(items1.confirmed.value)}</span>
                       <FontAwesomeIcon icon={faFrown} size="3x" className="float-right"/><br/>Orang
                     </p>
                   </div>
@@ -88,7 +88,7 @@ class DataIndonesia extends Component {
                   <div className="card-body">
                     <p className="card-text">
                       Dalam Perawatan<br/>
-                      <span className="font-weight-bold lead">{this.numberWithCommas(items1.perawatan)}</span>
+                      <span className="font-weight-bold lead">{this.numberWithCommas(items1.confirmed.value - (items1.recovered.value + items1.deaths.value ))}</span>
                       <FontAwesomeIcon icon={faFrownOpen} size="3x" className="float-right"/><br/>Orang
                     </p>
                   </div>
@@ -100,7 +100,7 @@ class DataIndonesia extends Component {
                   <div className="card-body">
                     <p className="card-text">
                       Sembuh<br/>
-                      <span className="font-weight-bold lead">{this.numberWithCommas(items1.sembuh)}</span>
+                      <span className="font-weight-bold lead">{this.numberWithCommas(items1.recovered.value)}</span>
                       <FontAwesomeIcon icon={faGrinWink} size="3x" className="float-right"/><br/>Orang
                     </p>
                   </div>
@@ -112,7 +112,7 @@ class DataIndonesia extends Component {
                   <div className="card-body">
                     <p className="card-text">
                       Meninggal<br/>
-                      <span className="font-weight-bold lead">{this.numberWithCommas(items1.meninggal)}</span>
+                      <span className="font-weight-bold lead">{this.numberWithCommas(items1.deaths.value)}</span>
                       <FontAwesomeIcon icon={faTired} size="3x" className="float-right"/><br/>Orang
                     </p>
                   </div>
@@ -120,7 +120,7 @@ class DataIndonesia extends Component {
               </div>
 
             </div>
-            <p className="small text-muted">Pembaruan Terakhir : {this.timeConverter(items1.lastUpdate)}</p>
+            <p className="small text-muted">Pembaruan Terakhir : {items1.lastUpdate}</p>
         </div>
         )
     }
