@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/wican-webdesign/static/css/main.cce4e104.chunk.css",
-    "main.js": "/wican-webdesign/static/js/main.aabc9131.chunk.js",
-    "main.js.map": "/wican-webdesign/static/js/main.aabc9131.chunk.js.map",
+    "main.js": "/wican-webdesign/static/js/main.9a269dd2.chunk.js",
+    "main.js.map": "/wican-webdesign/static/js/main.9a269dd2.chunk.js.map",
     "runtime-main.js": "/wican-webdesign/static/js/runtime-main.aa8f004a.js",
     "runtime-main.js.map": "/wican-webdesign/static/js/runtime-main.aa8f004a.js.map",
     "static/js/2.91a848ce.chunk.js": "/wican-webdesign/static/js/2.91a848ce.chunk.js",
@@ -29,6 +29,6 @@
     "static/js/runtime-main.aa8f004a.js",
     "static/js/2.91a848ce.chunk.js",
     "static/css/main.cce4e104.chunk.css",
-    "static/js/main.aabc9131.chunk.js"
+    "static/js/main.9a269dd2.chunk.js"
   ]
 }
