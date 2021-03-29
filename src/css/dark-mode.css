@@ -1,5 +1,5 @@
 [data-theme="dark"] .logo {
-  background-image: url('../img/logo-dark.png') !important;
+  background-image: url("../img/logo-dark.png") !important;
 }
 
 [data-theme="dark"] hr {
@@ -22,13 +22,14 @@
   color: #97aecb !important;
 }
 
-[data-theme="dark"] .nav-item > a.active{
+[data-theme="dark"] .nav-item > a.active {
   color: #85a1c3 !important;
 }
 
 [data-theme="dark"] {
   background-color: #222 !important;
   color: #eee !important;
+  transition: color 0.2s;
 }
 
 [data-theme="dark"] .jumbotron {
@@ -36,28 +37,28 @@
   background-image: none !important;
 }
 
-[data-theme="dark"] .bg-dark{
+[data-theme="dark"] .bg-dark {
   color: #eee !important;
   background-color: #333 !important;
   border: 1px solid #eee !important;
 }
 
-[data-theme="dark"] .bg-primary{
-  color: #3498DB !important;
+[data-theme="dark"] .bg-primary {
+  color: #3498db !important;
   background-color: #333 !important;
-  border: 1px solid #3498DB !important;
+  border: 1px solid #3498db !important;
 }
 
-[data-theme="dark"] .bg-success{
-  color: #00BC8C !important;
+[data-theme="dark"] .bg-success {
+  color: #00bc8c !important;
   background-color: #333 !important;
-  border: 1px solid #00BC8C  !important;
+  border: 1px solid #00bc8c !important;
 }
 
-[data-theme="dark"] .bg-danger{
-  color: #E74C3C !important;
+[data-theme="dark"] .bg-danger {
+  color: #e74c3c !important;
   background-color: #333 !important;
-  border: 1px solid #E74C3C !important;
+  border: 1px solid #e74c3c !important;
 }
 
 [data-theme="dark"] .bg-light {
@@ -65,62 +66,74 @@
   color: #eee !important;
 }
 
-[data-theme="dark"] .bg-white{
+[data-theme="dark"] .bg-white {
   background-color: #2d2d2d !important;
 }
 
-[data-theme="dark"] .table-light tbody+tbody, [data-theme="dark"] .table-light td, [data-theme="dark"] .table-light th, [data-theme="dark"] .table-light thead th{
+[data-theme="dark"] .table-light tbody + tbody,
+[data-theme="dark"] .table-light td,
+[data-theme="dark"] .table-light th,
+[data-theme="dark"] .table-light thead th {
   border-color: #555;
 }
 
-[data-theme="dark"] .table-light{
+[data-theme="dark"] .table-light {
   background-color: #333 !important;
   color: #eee !important;
 }
 
-[data-theme="dark"] .table-light > tbody > tr:hover{
+[data-theme="dark"] .table-light > tbody > tr:hover {
   background-color: #222 !important;
   color: #eee !important;
 }
 
-[data-theme="dark"] .peta-sebaran{
+[data-theme="dark"] .peta-sebaran {
   background-image: url(../img/location-dark.png);
 }
 
-[data-theme="dark"] .rs-rujukan{
+[data-theme="dark"] .rs-rujukan {
   background-image: url(../img/ambulance-dark.png);
 }
 
-[data-theme="dark"] .grafik{
+[data-theme="dark"] .grafik {
   background-image: url(../img/chart-dark.png);
 }
 
-[data-theme="dark"] .vaksin{
+[data-theme="dark"] .vaksin {
   background-image: url(../img/chemical-dark.png);
 }
 
-[data-theme="dark"] a.rs-rujukan, [data-theme="dark"] a.grafik, [data-theme="dark"] a.vaksin, [data-theme="dark"] a.peta-sebaran{
-  background-color: #375A7F!important;
+[data-theme="dark"] a.rs-rujukan,
+[data-theme="dark"] a.grafik,
+[data-theme="dark"] a.vaksin,
+[data-theme="dark"] a.peta-sebaran {
+  background-color: #375a7f !important;
 }
 
-[data-theme="dark"] a.rs-rujukan:hover, [data-theme="dark"] a.grafik:hover, [data-theme="dark"] a.vaksin:hover, [data-theme="dark"] a.peta-sebaran:hover{
-  background-color: #2C4967 !important;
+[data-theme="dark"] a.rs-rujukan:hover,
+[data-theme="dark"] a.grafik:hover,
+[data-theme="dark"] a.vaksin:hover,
+[data-theme="dark"] a.peta-sebaran:hover {
+  background-color: #2c4967 !important;
 }
 
-[data-theme="dark"] .scroll-to-top{
+[data-theme="dark"] .scroll-to-top {
   color: #333 !important;
   background-color: #85a1c3 !important;
 }
 
-[data-theme="dark"] a.scroll-to-top:hover, [data-theme="dark"] a.scroll-to-top:active{
+[data-theme="dark"] a.scroll-to-top:hover,
+[data-theme="dark"] a.scroll-to-top:active {
   color: #333 !important;
   background-color: #97aecb !important;
 }
 
-[data-theme="dark"] .shadow-sm, [data-theme="dark"] .shadow, [data-theme="dark"] .shadow-lg{
+[data-theme="dark"] .shadow-sm,
+[data-theme="dark"] .shadow,
+[data-theme="dark"] .shadow-lg {
   box-shadow: none !important;
 }
 
-[data-theme="dark"] .text-muted{
+[data-theme="dark"] .text-muted {
   color: #ccc !important;
 }

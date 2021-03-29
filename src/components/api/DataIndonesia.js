@@ -1,129 +1,139 @@
 import React, { Component } from "react";
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFrown, faFrownOpen, faGrinWink, faTired } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFrown, faFrownOpen, faGrinWink, faTired } from "@fortawesome/free-solid-svg-icons";
 
-import $ from 'jquery';
+import $ from "jquery";
 
 class DataIndonesia extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            items1: [],
-            isLoading: true
-        }
-    }
+  constructor(props) {
+    super(props);
+    this.state = {
+      items1: [],
+      isLoading: true,
+    };
+  }
 
-    componentDidMount() {
-      Promise.all([
-          fetch('https://covid19.mathdro.id/api/countries/indonesia')
-      ])
+  componentDidMount() {
+    Promise.all([fetch("https://covid19.mathdro.id/api/countries/indonesia")])
       .then(([res1]) => Promise.all([res1.json()]))
-      .then(([data1]) => this.setState({
+      .then(([data1]) =>
+        this.setState({
           items1: data1,
-          isLoading: false
-      }));
+          isLoading: false,
+        })
+      );
 
-      $('.status').each(function(i) {
-        setTimeout(function(){
-          $('.status').eq(i).addClass('visible');
-        },100 * (i+1));	
-      });
-    } 
+    $(".status").each(function (i) {
+      setTimeout(function () {
+        $(".status").eq(i).addClass("visible");
+      }, 100 * (i + 1));
+    });
+  }
 
-    componentDidUpdate() {
-      $('.status').each(function(i) {
-        setTimeout(function(){
-          $('.status').eq(i).addClass('visible');
-        },100 * (i+1));	
-      });
-    }
+  componentDidUpdate() {
+    $(".status").each(function (i) {
+      setTimeout(function () {
+        $(".status").eq(i).addClass("visible");
+      }, 100 * (i + 1));
+    });
+  }
 
-    numberWithCommas(x) {
-        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-    }
+  numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  }
 
-    timeConverter(UNIX_timestamp){
-        var a = new Date(UNIX_timestamp);
-        var months = ['Januari','Februari','Maret','April','Mei','Juni','Juli','Agustus','September','Oktober','November','Desember'];
-        var year = a.getFullYear();
-        var month = months[a.getMonth()];
-        var date = a.getDate() < 10 ? '0' + a.getDate() : a.getDate();;
-        var hour = a.getHours() < 10 ? '0' + a.getHours() : a.getHours();
-        var min = a.getMinutes() < 10 ? '0' + a.getMinutes() : a.getMinutes();
-        var sec = a.getSeconds() < 10 ? '0' + a.getSeconds() : a.getSeconds();
-        var time = date + ' ' + month + ' ' + year + ' ' + hour + ':' + min + ':' + sec ;
-        return time;
-    }
+  timeConverter(UNIX_timestamp) {
+    var a = new Date(UNIX_timestamp);
+    var months = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"];
+    var year = a.getFullYear();
+    var month = months[a.getMonth()];
+    var date = a.getDate() < 10 ? "0" + a.getDate() : a.getDate();
+    var hour = a.getHours() < 10 ? "0" + a.getHours() : a.getHours();
+    var min = a.getMinutes() < 10 ? "0" + a.getMinutes() : a.getMinutes();
+    var sec = a.getSeconds() < 10 ? "0" + a.getSeconds() : a.getSeconds();
+    var time = date + " " + month + " " + year + " " + hour + ":" + min + ":" + sec;
+    return time;
+  }
 
-    render(){
-        const { items1, isLoading } = this.state;
-    
-        if (isLoading) {
-            return (
-            <div>
-                <p className="text-muted">Sedang mencari data..</p>
-            </div>
-            );
-        }
+  render() {
+    const { items1, isLoading } = this.state;
 
-        return (
+    if (isLoading) {
+      return (
         <div>
-            <div className="covid row justify-content-center text-left">
-
-              <div className="col-lg-3">
-                <div className="card bg-dark mb-4 shadow status">
-                  <div className="card-body">
-                    <p className="card-text">
-                      Terkonfirmasi Positif<br/>
-                      <span className="font-weight-bold lead">{this.numberWithCommas(items1.confirmed.value)}</span>
-                      <FontAwesomeIcon icon={faFrown} size="3x" className="float-right"/><br/>Orang
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="col-lg-3">
-                <div className="card bg-primary mb-4 shadow status">
-                  <div className="card-body">
-                    <p className="card-text">
-                      Dalam Perawatan<br/>
-                      <span className="font-weight-bold lead">{this.numberWithCommas(items1.confirmed.value - (items1.recovered.value + items1.deaths.value ))}</span>
-                      <FontAwesomeIcon icon={faFrownOpen} size="3x" className="float-right"/><br/>Orang
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="col-lg-3">
-                <div className="card bg-success mb-4 shadow status">
-                  <div className="card-body">
-                    <p className="card-text">
-                      Sembuh<br/>
-                      <span className="font-weight-bold lead">{this.numberWithCommas(items1.recovered.value)}</span>
-                      <FontAwesomeIcon icon={faGrinWink} size="3x" className="float-right"/><br/>Orang
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="col-lg-3">
-                <div className="card bg-danger mb-4 shadow status">
-                  <div className="card-body">
-                    <p className="card-text">
-                      Meninggal<br/>
-                      <span className="font-weight-bold lead">{this.numberWithCommas(items1.deaths.value)}</span>
-                      <FontAwesomeIcon icon={faTired} size="3x" className="float-right"/><br/>Orang
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-            <p className="small text-muted">Pembaruan Terakhir : {items1.lastUpdate}</p>
+          <p className="text-muted">Sedang mencari data..</p>
         </div>
-        )
+      );
     }
+
+    return (
+      <div>
+        <div className="covid row justify-content-center text-left">
+          <div className="col-lg-3">
+            <div className="card bg-dark mb-4 shadow status">
+              <div className="card-body">
+                <p className="card-text">
+                  Terkonfirmasi Positif
+                  <br />
+                  <span className="font-weight-bold lead">{this.numberWithCommas(items1.confirmed.value)}</span>
+                  <FontAwesomeIcon icon={faFrown} size="3x" className="float-right" />
+                  <br />
+                  Orang
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-lg-3">
+            <div className="card bg-primary mb-4 shadow status">
+              <div className="card-body">
+                <p className="card-text">
+                  Dalam Perawatan
+                  <br />
+                  <span className="font-weight-bold lead">{this.numberWithCommas(items1.confirmed.value - (items1.recovered.value + items1.deaths.value))}</span>
+                  <FontAwesomeIcon icon={faFrownOpen} size="3x" className="float-right" />
+                  <br />
+                  Orang
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-lg-3">
+            <div className="card bg-success mb-4 shadow status">
+              <div className="card-body">
+                <p className="card-text">
+                  Sembuh
+                  <br />
+                  <span className="font-weight-bold lead">{this.numberWithCommas(items1.recovered.value)}</span>
+                  <FontAwesomeIcon icon={faGrinWink} size="3x" className="float-right" />
+                  <br />
+                  Orang
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-lg-3">
+            <div className="card bg-danger mb-4 shadow status">
+              <div className="card-body">
+                <p className="card-text">
+                  Meninggal
+                  <br />
+                  <span className="font-weight-bold lead">{this.numberWithCommas(items1.deaths.value)}</span>
+                  <FontAwesomeIcon icon={faTired} size="3x" className="float-right" />
+                  <br />
+                  Orang
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p className="small text-muted">Pembaruan Terakhir : {items1.lastUpdate}</p>
+      </div>
+    );
+  }
 }
 
 export default DataIndonesia;

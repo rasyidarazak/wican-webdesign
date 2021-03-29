@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
-a{
+a {
   color: #46688f;
 }
 
-a:hover{
+a:hover {
   color: #5b81ae;
   text-decoration: none;
 }
@@ -13,7 +13,7 @@ a:hover{
   color: #5b81ae !important;
 }
 
-.nav-item > a.active{
+.nav-item > a.active {
   color: #46688f !important;
   font-weight: bold;
 }
@@ -21,119 +21,135 @@ a:hover{
 .navbar-toggler:focus,
 .navbar-toggler:active,
 .navbar-toggler-icon:focus {
-    outline: none;
-    box-shadow: none;
+  outline: none;
+  box-shadow: none;
 }
 
-.navbar-toggler:hover{
+.navbar-toggler:hover {
   border: 1px solid #46688f;
 }
 
-.bars{
+.bars {
   color: #46688f;
   font-size: 30px;
 }
 
-body{
-  font-family: 'Roboto', 'Arial', sans-serif;
+body {
+  font-family: "Roboto", "Arial", sans-serif;
   background-color: #eee;
   color: #121212;
   min-height: 100vh;
+  transition: color 0.2s;
 }
 
-.jumbotron{
+.jumbotron {
   background-image: linear-gradient(#fafafa, #eee);
 }
 
-.bg-dark, .bg-primary, .bg-success, .bg-danger{
+.bg-dark,
+.bg-primary,
+.bg-success,
+.bg-danger {
   color: #eee;
 }
 
-.bg-light{
+.bg-light {
   background-color: #fafafa !important;
   color: #121212;
 }
 
-.bg-white{
+.bg-white {
   background-color: #e1e1e1 !important;
 }
 
-.table-light tbody+tbody, .table-light td, .table-light th, .table-light thead th{
+.table-light tbody + tbody,
+.table-light td,
+.table-light th,
+.table-light thead th {
   border-color: #ddd;
 }
 
-.table-light{
+.table-light {
   background-color: #fafafa;
   color: #121212;
 }
 
-.table-light > tbody > tr:hover{
+.table-light > tbody > tr:hover {
   background-color: #eee;
   color: #121212;
 }
 
-.rs-rujukan:hover, .grafik:hover, .vaksin:hover, .peta-sebaran:hover{
+.rs-rujukan:hover,
+.grafik:hover,
+.vaksin:hover,
+.peta-sebaran:hover {
   background-size: 60%;
-  transition: .2s;
+  transition: 0.2s;
   background-color: #fafafa !important;
 }
 
-a.rs-rujukan:hover, a.grafik:hover, a.vaksin:hover, a.peta-sebaran:hover{
+a.rs-rujukan:hover,
+a.grafik:hover,
+a.vaksin:hover,
+a.peta-sebaran:hover {
   background-color: #fafafa !important;
 }
 
-.app{
+.app {
   min-height: 100vh;
 }
 
-.logo{
+.logo {
   width: 191px;
   height: 44px;
-  background-image: url('../img/logo-light.png');
+  background-image: url("../img/logo-light.png");
   background-size: cover;
 }
 
-.home-body-1{
+.home-body-1 {
   margin-bottom: 0;
 }
 
-.home-body-2{
+.home-body-2 {
   border-radius: 2%;
 }
 
 .table-responsive {
-  display:block;
-  height : 500px !important;
-  overflow-y : scroll;
+  display: block;
+  height: 500px !important;
+  overflow-y: scroll;
   width: 100%;
   overflow-x: auto;
 }
 
-@media (min-width: 992px) { 
-  .home-body-1{
+@media (min-width: 992px) {
+  .home-body-1 {
     height: 863px;
   }
 
-  .home-body-2{
+  .home-body-2 {
     margin-top: -363px;
   }
 }
 
-.home-body-4 > .row > .card{
+.home-body-4 > .row > .card {
   min-height: 900px;
 }
 
-.fb3{
+.fb3 {
   width: 35%;
 }
 
-@media (min-width: 768px) { 
-  .fb3{
+@media (min-width: 768px) {
+  .fb3 {
     width: 50%;
   }
 }
 
-.peta-sebaran, .rs-rujukan, .grafik, .vaksin{
+.peta-sebaran,
+.rs-rujukan,
+.grafik,
+.vaksin {
   width: 150px;
   height: 150px;
   max-height: 7.25rem;
@@ -143,20 +159,20 @@ a.rs-rujukan:hover, a.grafik:hover, a.vaksin:hover, a.peta-sebaran:hover{
   background-size: 55%;
 }
 
-.peta-sebaran{
+.peta-sebaran {
   background-image: url(../img/location-light.png);
 }
-.rs-rujukan{
+.rs-rujukan {
   background-image: url(../img/ambulance-light.png);
 }
-.grafik{
+.grafik {
   background-image: url(../img/chart-light.png);
 }
-.vaksin{
+.vaksin {
   background-image: url(../img/chemical-light.png);
 }
 
-.scroll-to-top{
+.scroll-to-top {
   position: fixed;
   right: 1rem;
   bottom: 1rem;
@@ -169,7 +185,8 @@ a.rs-rujukan:hover, a.grafik:hover, a.vaksin:hover, a.peta-sebaran:hover{
   line-height: 46px;
 }
 
-a.scroll-to-top:hover, a.scroll-to-top:active {
+a.scroll-to-top:hover,
+a.scroll-to-top:active {
   color: #fafafa;
   background-color: #5b81ae !important;
 }
@@ -178,17 +195,55 @@ a.scroll-to-top:hover, a.scroll-to-top:active {
   font-weight: 800;
 }
 
-.dropdown-divider{
-  opacity: .3;
+.dropdown-divider {
+  opacity: 0.3;
 }
 
-.status{
+.status {
   opacity: 0;
   transform: translate(-50px, 0);
-  transition: transform .5s, opacity .5s;
+  transition: transform 0.5s, opacity 0.5s;
 }
 
-.visible{
+.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.corona-animation,
+.hand-wash-animation,
+.social-distance-animation,
+.male-patient-animation {
+  opacity: 0;
+  transform: translate(-50px, 0);
+  transition: 0.8s;
+}
+
+.fever-animation {
+  opacity: 0;
+  transform: translate(0, 50px);
+  transition: 0.8s;
+}
+
+.stay-at-home-animation {
+  opacity: 0;
+  transform: translate(50px, 0);
+  transition: 0.8s;
+}
+
+.droplet-animation {
+  opacity: 0;
+  transform: translate(0, -50px);
+  transition: 0.8s;
+}
+
+.corona-animation-go,
+.droplet-animation-go,
+.hand-wash-animation-go,
+.social-distance-animation-go,
+.male-patient-animation-go,
+.fever-animation-go,
+.stay-at-home-animation-go {
   opacity: 1;
   transform: translate(0, 0);
 }
