@@ -1,6 +1,6 @@
 {
   "homepage": "http://rasyidarazak.github.io/covid19-information",
-  "name": "covid19-design",
+  "name": "covid19-information",
   "version": "0.1.0",
   "private": false,
   "dependencies": {

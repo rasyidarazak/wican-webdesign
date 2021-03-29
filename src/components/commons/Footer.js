@@ -5,6 +5,12 @@ import { faFacebookF, faTwitter, faInstagram, faWhatsapp } from "@fortawesome/fr
 import { faHome, faEnvelope, faPhoneSquare, faHeart, faCopyright } from "@fortawesome/free-solid-svg-icons";
 
 class Footer extends Component {
+  componentDidMount() {
+    var dt = new Date();
+    let year = document.getElementById("year");
+    year.innerHTML = dt.getFullYear();
+  }
+
   render() {
     return (
       <div className="page-footer font-small mdb-color pt-4 bg-light">
@@ -60,7 +66,7 @@ class Footer extends Component {
 
             <div className="col-md-4">
               <p className="small">
-                <FontAwesomeIcon icon={faCopyright} /> 2020. Built with <FontAwesomeIcon icon={faHeart} /> by Rasyid Arazak.
+                <FontAwesomeIcon icon={faCopyright} /> <span id="year"></span>. Built with <FontAwesomeIcon icon={faHeart} /> by Rasyid Arazak.
               </p>
             </div>
 
